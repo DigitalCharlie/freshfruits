@@ -42,7 +42,7 @@ router.get("/seed", (req,res) => {
 router.get('/', (req,res) => {
     Fruit.find({})
     .then((fruits) => {
-        res.render('fruits/index', {fruits})
+        res.render('fruits/Index', {fruits})
     })
     .catch ((error) => {
         res.status(400).json({error})
